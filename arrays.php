@@ -7,10 +7,10 @@ Declare and assign the indexed array with your favourite food
 */
 
 $food = [
-"Rice",
+"Burger",
+"Raajma",
 "Eggs",
-"Soups",
-"Burger"];
+"Soups"];
 
 /*
 Print every array element in a new line.
@@ -57,10 +57,10 @@ Every key of food_assoc has the value that describes the type of food (salad, ma
 */
 
 $food_assoc = [
-"Rice"=>"MainCourse",
-"Eggs"=>"Breakfast",
-"Soups"=>"Starter",
-"Burger"=>"Snack"];
+"Raajma"=>"main_course",
+"Eggs"=>"breakfast",
+"Soups"=>"starter",
+"Burger"=>"snack"];
 
 /*
 Print every food and type in the separate lines so it renders like this:
@@ -68,7 +68,7 @@ pizza | main counrse
 cheesesake | desert 
 */
 
-echo $food[0] . " | " . $food_assoc["Rice"] . "<br>" 
+echo $food[0] . " | " . $food_assoc["Raajma"] . "<br>" 
  . $food[1] . " | " . $food_assoc["Eggs"] . "<br>"
  . $food[2] . " | " . $food_assoc["Soups"] . "<br>"
  . $food[3] . " | " . $food_assoc["Burger"] . "<br>";
@@ -95,20 +95,20 @@ and carries the information about the type and origin
 */
 
 $food_assoc = [
-  "Rice"=> [
-    "type" => "MainCourse",
+  "Raajma"=> [
+    "type" => "main_course",
     "origin" => "India"
   ],
   "Eggs"=> [
-    "type" => "Breakfast", 
+    "type" => "breakfast", 
     "origin" => "England"
   ],
   "Soups"=>[
-    "type" => "Starter", 
+    "type" => "starter", 
     "origin" => "India"
   ],
   "Burger"=>[
-    "type" => "Snack", 
+    "type" => "snack", 
     "origin" => "America"
   ]
 ];
@@ -120,9 +120,9 @@ cheesesake | desert | Greece
 */
 echo $food[0]
  . " | "
- . $food_assoc["Rice"]["type"]
+ . $food_assoc["Raajma"]["type"]
  . " | "
- . $food_assoc["Rice"]["origin"]
+ . $food_assoc["Raajma"]["origin"]
  . "<br>" . $food[1]
  . " | "
  . $food_assoc["Eggs"]["type"]
@@ -170,8 +170,8 @@ echo
 "<table>
   <tr>
     <th>".$food[0]."</th>
-    <th>".$food_assoc["Rice"]["type"]."</th>
-    <th>".$food_assoc["Rice"]["origin"]."</th>
+    <th>".$food_assoc["Raajma"]["type"]."</th>
+    <th>".$food_assoc["Raajma"]["origin"]."</th>
   </tr>
   <tr>
     <th>".$food[1]."</th>
